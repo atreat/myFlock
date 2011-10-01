@@ -70,6 +70,7 @@
 		8DDF89340FA48FB600E59517 /* more_button_normal_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDF89330FA48FB600E59517 /* more_button_normal_b.png */; };
 		8DF5E3760F910D340096B849 /* dm.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E3740F910D340096B849 /* dm.png */; };
 		8DF5E3770F910D340096B849 /* favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5E3750F910D340096B849 /* favorites.png */; };
+		ACAE43501437841200E45479 /* MYFLLocalTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAE434F1437841200E45479 /* MYFLLocalTweetViewController.m */; };
 		F1474F8B0FD3F457007D9F4C /* NTLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF20FD3F457007D9F4C /* NTLNAppDelegate.m */; };
 		F1474F8C0FD3F457007D9F4C /* NTLNTweetPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF60FD3F457007D9F4C /* NTLNTweetPostViewController.m */; };
 		F1474F8D0FD3F457007D9F4C /* NTLNAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1474EF90FD3F457007D9F4C /* NTLNAboutViewController.m */; };
@@ -304,6 +305,8 @@
 		8DDF89330FA48FB600E59517 /* more_button_normal_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more_button_normal_b.png; sourceTree = "<group>"; };
 		8DF5E3740F910D340096B849 /* dm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dm.png; sourceTree = "<group>"; };
 		8DF5E3750F910D340096B849 /* favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorites.png; sourceTree = "<group>"; };
+		ACAE434E1437841200E45479 /* MYFLLocalTweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFLLocalTweetViewController.h; sourceTree = "<group>"; };
+		ACAE434F1437841200E45479 /* MYFLLocalTweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFLLocalTweetViewController.m; sourceTree = "<group>"; };
 		F1474EF10FD3F457007D9F4C /* NTLNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNAppDelegate.h; sourceTree = "<group>"; };
 		F1474EF20FD3F457007D9F4C /* NTLNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTLNAppDelegate.m; sourceTree = "<group>"; };
 		F1474EF50FD3F457007D9F4C /* NTLNTweetPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTLNTweetPostViewController.h; sourceTree = "<group>"; };
@@ -615,6 +618,7 @@
 				FAA454FA115A3CCC00829EDF /* RIL_apikeys.h */,
 				FAEBBAB410E8A52F006229FC /* bit_ly_apikeys.h */,
 				FA60B5E510E60AF9006ECFF9 /* external */,
+				ACAE434A143783C400E45479 /* myFlock */,
 				F1474EEF0FD3F457007D9F4C /* NatsuLion */,
 				F1474FD20FD3F486007D9F4C /* uickit */,
 				F1E17D820FBE9DFF0023636F /* OAuthConsumer */,
@@ -784,6 +788,39 @@
 				8D4408F90FA6E6B70087F6ED /* GTMObjectSingleton.h */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		ACAE434A143783C400E45479 /* myFlock */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE434D143783D400E45479 /* model */,
+				ACAE434C143783D200E45479 /* view */,
+				ACAE434B143783D000E45479 /* controller */,
+			);
+			name = myFlock;
+			sourceTree = "<group>";
+		};
+		ACAE434B143783D000E45479 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE434E1437841200E45479 /* MYFLLocalTweetViewController.h */,
+				ACAE434F1437841200E45479 /* MYFLLocalTweetViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		ACAE434C143783D200E45479 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		ACAE434D143783D400E45479 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		F1474EEF0FD3F457007D9F4C /* NatsuLion */ = {
@@ -1583,6 +1620,7 @@
 				FAF637F3115682F900413992 /* TWTRILAccountViewController.m in Sources */,
 				FAF6385411568C9400413992 /* ReadItLaterLite.m in Sources */,
 				FACDD3E3115F9B9200E3E612 /* TWTSearchViewController.m in Sources */,
+				ACAE43501437841200E45479 /* MYFLLocalTweetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
