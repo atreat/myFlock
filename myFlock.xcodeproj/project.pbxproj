@@ -1622,7 +1622,7 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
@@ -1643,15 +1643,16 @@
 					"\"$(SRCROOT)/libs/route-me/Device\"",
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = myFlock;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
@@ -1670,8 +1671,9 @@
 					"\"$(SRCROOT)/libs/route-me/Device\"",
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = myFlock;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -1697,7 +1699,7 @@
 		8D542AC50E4C972E00F1E4EC /* Distribution_adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
@@ -1716,8 +1718,9 @@
 					"\"$(SRCROOT)/libs/route-me/Device\"",
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = myFlock;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Distribution_adhoc;
 		};
@@ -1783,7 +1786,7 @@
 		FA2A3DE2110B308A00BCBF65 /* Distribution_appstore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1803,11 +1806,12 @@
 					"\"$(SRCROOT)/libs/route-me/Device\"",
 					"\"$(SRCROOT)/libs/route-me/Simulator\"",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				OTHER_CFLAGS = "-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/libxml2";
 				PRODUCT_NAME = myFlock;
 				PROVISIONING_PROFILE = "AEC8091D-2C50-4DB0-9CEF-60FDAC6A8E89";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AEC8091D-2C50-4DB0-9CEF-60FDAC6A8E89";
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Distribution_appstore;
 		};

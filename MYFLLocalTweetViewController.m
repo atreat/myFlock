@@ -97,7 +97,7 @@
 	// e.g. self.myOutlet = nil;
 }
 
-
+#pragma mark -
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
